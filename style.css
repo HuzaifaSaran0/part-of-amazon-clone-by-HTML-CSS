@@ -1,0 +1,310 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Corrected from border: border-box */
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    /* position: relative; */
+    /* background-color: #7d8585; */
+}
+.navbar {
+    height: 64px;
+    background-color: #151717;
+    color: white;
+    /* position: fixed; */
+    position: absolute;
+    width: 100%;
+    display: flex;
+    padding: 8px 0px 0px 10px;
+    top: 0; /* Fixed at the top */
+}
+
+.nav-logo {
+    height: 50px;
+    min-width: 125px; 
+    /* padding-left: 15px; */
+}
+
+.logo {
+    background-image: url('amazon_logo2.png'); 
+    background-size: cover;  
+    background-repeat: no-repeat;
+    min-height: 50px;
+    width: 100%;
+    cursor: pointer;
+    /* margin-bottom: 50px; */
+    /* padding-top: 0px; */
+    /* padding-bottom: 30px; */
+
+}
+.nav-address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px; 
+    cursor: pointer;
+}
+.nav-address > p{
+    padding-left: 11px;
+    font-size: 0.9rem;
+    color: #CCCCCC;
+
+}
+.nav-address .address-icon{
+    display: flex;
+}
+.nav-address .address-icon p{
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: white;
+}
+/* Nav Search Bar */
+.nav-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    width: 825px;
+    gap: 0px;
+    /* flex-grow:; */
+}
+.search{
+    flex-grow: 1;
+    /* width: 100%; */
+}
+.nav-search input{
+    /* width:inherit; */
+    min-width: 24vw;
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    font-size: medium;
+    border-radius: 0%;
+    border: none;
+}
+.nav-search .options {
+    margin-left: 10px;
+    display: flex;
+    height: 100%;
+    width: 56px;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 3px;
+    /* border: none; */
+}
+.nav-search .options select{
+    border-radius: 5px 0px 0px 5px;
+    width: 55px;
+    height: 45px;
+    background-color: white;
+    padding: 0px 6px;
+    border: none;
+    cursor: pointer;
+
+    /* border: 0px 10px 0px 0px; */
+}
+.nav-search .options select:hover{
+    background-color: #CCCCCC;
+}
+.nav-search .Btn{
+    display: flex;
+    height: 89%;
+    width: 56px;
+    margin-right: 20px;
+    /* align-items: flex-start;  */
+    /* justify-content: center; */
+    /* padding-top: 3px; */
+}
+.nav-search .Btn button{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+    border: none;
+    font-size: 22px;
+    background-color: rgb(245, 196, 79);
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+
+}
+.nav-search .Btn button:hover{
+    background-color: rgb(224, 170, 45);
+}
+
+.en{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    height: 90%;
+}
+.en .flag{
+    /* margin-left: 10px; */
+    width: 95px;
+    display: flex;
+    height: 90%;
+}
+.en .flag select{
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: 84px;
+    height: 45px;
+    color: white;
+    background-color: #0f1111;
+    padding: 0px 6px;
+    border: none;  
+    cursor: pointer;
+
+}
+.accounts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    min-width: 150px; 
+    background-color: #0f1111;
+    padding-left: 11px;
+    cursor: pointer;
+
+    
+}
+.accounts > p{
+    font-size: 0.9rem;
+    color: #CCCCCC;
+
+}
+.accounts .first{
+    margin-left: 0px;
+    align-self: flex-start;
+}
+.accounts .second{
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.returns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 14px;
+    /* align-items: center; */
+    height: 50px;
+    min-width: 100px;   
+    background-color: #0f1111;
+    cursor: pointer;
+}
+.orders p{
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: white;
+}
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;   
+    background-color: #0f1111;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Nav2 */
+.nav2{
+    height: 50px;
+    background-color: #343535;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 10px; */
+    margin-top: 64px;
+    position: absolute;
+    /* z-index: 5; */
+    padding-left: 23px;
+}
+.nav2 div{
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background-color: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+
+}
+.nav2 div:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+.nav2 .one{
+    min-width: 77px;
+}
+.nav2 .one i{
+    font-size: 1.5rem;
+    /* font-weight: ; */
+}
+.nav2 .two {
+    min-width: 110px;
+}
+.nav2 .three {
+    min-width: 135px;
+}
+.nav2 .four {
+    min-width: 77px;
+}
+.nav2 .five {
+    min-width: 80px;
+}
+.nav2 .six {
+    min-width: 50px;
+}
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+}
+
+/* Main */
+.hero{
+    background-image: url(major.jpg);
+    background-size:cover;
+    height: 600px;
+    background-repeat: no-repeat;
+}
+.box{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.box .pehla{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+}
+.box .dosra{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+}
+.box .teesra{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+}
+.box .chotha{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+}
